@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;500&family=Kanit:wght@300&family=Noto+Sans:ital@1&family=Oxygen&family=Roboto:wght@500&family=Rubik:wght@400;500;700&family=Ubuntu:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;500&family=Kanit:wght@300&family=Noto+Sans:ital@1&family=Oxygen&family=Roboto:wght@400;500&family=Rubik:wght@400;500;700&family=Ubuntu:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.app-wrapper {
+  background-color: lightblue;
+  min-height: 100vh;
+}
+.navbar-div {
+  background-color: #3f979b;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.button-div {
+  width: 160px;
+  height: 40px;
+  position: relative;
+  margin: 8% 40%;
+}
+.button-div button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  border: 3px solid white;
+}
+.popup-container {
+  width: 32%;
+  height: 100%;
+  position: absolute;
+  left: 68%;
+  bottom: 0;
+  background-color: white;
+  transition: all ease-in 0.4s;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.popUp-title {
+  background-color: #3f979b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.arrow {
+  width: 36px !important;
+  height: 35px !important;
+  cursor: pointer;
+}
+
+#background-fade {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+  height: 100vh;
+  width: 100vw;
+}
+.dropDown-menus {
+  margin: 18px;
+}
+.Traits-div {
+  width: 80%;
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+.segment-Name p {
+  width: 80%;
+  font-family: "Ubuntu", sans-serif;
+}
+.segment-Name input {
+  width: 80%;
+  padding: 10px;
+}
+.AddSchema-div {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.AddSchema-div select {
+  padding: 10px;
+  width: 90%;
+  margin: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+.AddSchema-div button {
+  width: 44%;
+  border: 0;
+  background-color: white;
+
+  color: #009fbd;
+  cursor: pointer;
+  float: left;
+  font-family: "Roboto", sans-serif;
+}
+.BlueBox-div {
+  border: 3px solid #569daa;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.BlueBox-div select {
+  padding: 10px;
+  width: 80%;
+  margin: 5px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+.removeIcon {
+  cursor: pointer;
+  font-size: 25px;
+}
+.Save-Button {
+  display: flex;
+  gap: 25px;
+  margin: 15px;
+  position: absolute;
+  bottom: 10px;
+}
+.Save-Button button {
+  padding: 10px;
+}
+.saveButton {
+  background-color: #198754;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cancelButton {
+  border: 0;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+.User-Traits {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.User-Traits > span {
+  border: 1px solid green;
+  border-radius: 100px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+}
+.Group-Traits {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Group-Traits > span {
+  border: 1px solid red;
+  border-radius: 100px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+@media (min-width: 700px) and (max-width: 1124px) {
+  .popup-container {
+    width: 53%;
+    height: 100%;
+    position: absolute;
+    left: 47%;
+    bottom: 0;
+    background-color: white;
+    transition: all ease-in 0.4s;
+    font-family: "Ubuntu", sans-serif;
+  }
+}
+@media (min-width: 450px) and (max-width: 700px) {
+  .popup-container {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    background-color: white;
+    transition: all ease-in 0.4s;
+    font-family: "Ubuntu", sans-serif;
+  }
+}
+@media (max-width: 450px) {
+  .popup-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    background-color: white;
+    transition: all ease-in 0.4s;
+    font-family: "Ubuntu", sans-serif;
+  }
+}
